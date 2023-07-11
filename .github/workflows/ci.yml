@@ -2,14 +2,14 @@ name: Python application
 
 on:
   push:
-    branches: [ python-ci-workflow ]
+    branches: [ python-ci-workflow-1 ]
   pull_request:
-    branches: [ python-ci-workflow ]
+    branches: [ python-ci-workflow-1 ]
 
 jobs:
   build:
   build:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
